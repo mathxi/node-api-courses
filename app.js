@@ -21,7 +21,7 @@ app.get('/', async (req, res) => {
     res.json('We are home');
 
 })
-console.log("port :", process.env.PORT);
+console.log("port :", typeof process.env.PORT);
 const port = process.env.PORT;
 app.listen(port,() =>{
     console.log(`app running on port ${port}`);
