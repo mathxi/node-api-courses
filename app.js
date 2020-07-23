@@ -17,7 +17,7 @@ app.use(express.json());
 app.use('/listes', listsRoute);
 app.use('/elemlist', elem);
 
-app.get('/', async (req, res) => {
+app.get('/api/course', async (req, res) => {
 
     res.json('We are home');
 
