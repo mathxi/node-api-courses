@@ -1,7 +1,7 @@
 const { Sequelize, Model, DataTypes } = require('sequelize');
 require('dotenv/config');
 const Listes = require('./Listes')
-const sequelize = new Sequelize('mysql://jama4091_coursesad:Bkq7pfx199899!@aiguillette.o2switch.net:3306/jama4091_courses');
+const sequelize = new Sequelize(process.env.DB_CONNECTION);
 
 const Elem = sequelize.define('liste_elem', {
     id: {

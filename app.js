@@ -1,3 +1,4 @@
+require('dotenv/config');
 const express = require('express');
 var helmet = require('helmet');
 const listsRoute = require('./routes/listes')
