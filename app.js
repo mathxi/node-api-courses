@@ -1,4 +1,5 @@
 require('dotenv/config');
+console.log("port :", typeof process.env.PORT);
 const express = require('express');
 var helmet = require('helmet');
 const listsRoute = require('./routes/listes')
@@ -21,7 +22,7 @@ app.get('/', async (req, res) => {
     res.json('We are home');
 
 })
-console.log("port :", typeof process.env.PORT);
+
 const port = process.env.PORT;
 app.listen(port,() =>{
     console.log(`app running on port ${port}`);
