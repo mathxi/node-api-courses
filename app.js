@@ -1,6 +1,8 @@
 const express = require('express');
 var helmet = require('helmet');
-
+console.log("process.env: ",process.env)
+const listsRoute = require('./routes/listes')
+const elem = require('./routes/elem')
 var cors = require('cors')
 
 const app = express();
@@ -11,6 +13,8 @@ app.use(express.urlencoded());
 app.use(express.json());
 
 
+app.use('/listes', listsRoute);
+app.use('/elemlist', elem);
 
 app.get('/', async (req, res) => {
 
