@@ -1,5 +1,6 @@
 const { Sequelize, Model, DataTypes } = require('sequelize');
 require('dotenv/config');
+console.log("dbstring :",process.env.DB_CONNECTION)
 const sequelize = new Sequelize(process.env.DB_CONNECTION);
 
 const Liste = sequelize.define('liste', {
