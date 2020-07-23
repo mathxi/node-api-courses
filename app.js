@@ -1,6 +1,5 @@
 const express = require('express');
 var helmet = require('helmet');
-console.log("process.env: ",process.env)
 const listsRoute = require('./routes/listes')
 const elem = require('./routes/elem')
 var cors = require('cors')
@@ -21,7 +20,6 @@ app.get('/', async (req, res) => {
     res.json('We are home');
 
 })
-const port = process.env.PORT; 
 app.listen(port,() =>{
     console.log(`app running on port ${port}`);
 });
