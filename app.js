@@ -12,8 +12,7 @@ app.use(express.urlencoded());
 app.use(express.json());
 
 
-app.use('/listes', listsRoute);
-app.use('/elemlist', elem);
+
 
 app.get('/', async (req, res) => {
 
