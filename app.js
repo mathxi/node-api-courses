@@ -20,6 +20,7 @@ app.get('/', async (req, res) => {
     res.json('We are home');
 
 })
+const port = 80;
 app.listen(port,() =>{
     console.log(`app running on port ${port}`);
 });
