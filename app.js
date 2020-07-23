@@ -20,5 +20,7 @@ app.get('/', async (req, res) => {
     res.json('We are home');
 
 })
-
-app.listen(3800);
+const port = process.env.PORT; 
+app.listen(port,() =>{
+    console.log(`app running on port ${port}`);
+});
