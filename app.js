@@ -1,5 +1,5 @@
 require('dotenv/config');
-console.log("port :", typeof process.env.PORT);
+console.log("port :", process.env);
 const express = require('express');
 var helmet = require('helmet');
 const listsRoute = require('./routes/listes')
